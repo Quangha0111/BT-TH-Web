@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=ư, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="background-color: rgba(227, 161, 29)">
+      <h4>Survey Form</h4>
+      <p>text</p>
+      <form action="">
+        <div>
+          <span>1. What is your name?</span><br />
+          <input type="text" />
+        </div>
+        <div>
+          <span>2. What is your day of birth?</span> <br />
+          <span>
+            Month:
+            <select id="month" name="month">
+              <option selected>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </span>
+          <span>
+            Date:
+            <select id="day" name="month"></select>
+          </span>
+          <span> Year <input type="number" /></span>
+        </div>
+        <div>
+          <span>
+            3. What is your mailing address ( if you would like to have a hard
+            cooy of our catalog sent to you? )</span> <br>
+           <textarea name="" id="" cols="50" rows="10" placeholder="">Number/ P.O 
+Street:
+City:
+State/ Zip:
+        
+        </textarea>
+        </div>
+      </form>
+    </div>
+    <script>
+      var days = document.getElementById("day");
+      var d = "";
+      for (var i = 1; i <= 31; i++) {
+        d += "<option>" + i + "</option>";
+      }
+      days.innerHTML = d;
+    </script>
+  </body>
+</html>

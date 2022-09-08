@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        input,select{
+            width: 30%;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        p>input{
+            width: auto;
+        }
+        label{
+            width: 15%;
+        }
+        button{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <form action="" >
+        <h1>Contact Us</h1>
+        <p>Use the following form to send a message to Example Cafe</p>
+        <div>
+            <label for="email">Your email:</label>
+            <input type="email" name="" id="email" placeholder="" required>
+        </div>
+        <div>
+            <label for="txtArea">Message:</label>
+            <textarea name="txtArea" id="txtArea" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="select">How did you hear of us?</label>
+            <select name="select" id="select" >
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="zalo">Zale</option>
+            </select>
+        </div>
+        <div>
+            <label for="check">Newsletter</label>
+            <p><input type="checkbox" name="check" id="check" checked>Ensure this box is checked if you would like to receive email updates</p>
+        </div>
+        <button type="submit">Send message</button>
+    </form>
+</body>
+</html>
